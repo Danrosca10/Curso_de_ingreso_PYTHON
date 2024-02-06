@@ -5,8 +5,8 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
-nombre:
-apellido:
+nombre: Danilo 
+apellido: Scapicchi
 ---
 Ejercicio: entrada_salida_03
 ---
@@ -22,7 +22,7 @@ class App(customtkinter.CTk):
 
         self.title("UTN FRA")
 
-        self.label1 = customtkinter.CTkLabel(master=self, text="Nombre")
+        self.label1 = customtkinter.CTkLabel(master=self, text="Me quedo con vos")
         self.label1.grid(row=0, column=0, padx=20, pady=10)
         
         self.txt_nombre = customtkinter.CTkEntry(master=self)
@@ -34,7 +34,10 @@ class App(customtkinter.CTk):
 
 
     def btn_mostrar_on_click(self):
-        pass
+        me_quedo_con_vos = self.txt_nombre.get()
+        me_quedo_con_vos = "me quedo con vos" + me_quedo_con_vos
+        alert(title="ciudad magica", message="voy a buscarte qué noche mágica ciudad de Buenos Aires") 
+
                 
     
 if __name__ == "__main__":
