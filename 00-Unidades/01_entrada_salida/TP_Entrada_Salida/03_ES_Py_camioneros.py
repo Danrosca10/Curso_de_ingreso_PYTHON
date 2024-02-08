@@ -47,7 +47,8 @@ class App(customtkinter.CTk):
     
     def btn_cantidad_camiones_on_click(self):
         toneladas_camiones_texto= self.txt_toneladas.get()
-        
+        toneladas_camiones_numero= float(toneladas_camiones_texto)
+        total_de_camiones= toneladas_camiones_numero
 
 
     def btn_tiempo_llegada_on_click(self):
