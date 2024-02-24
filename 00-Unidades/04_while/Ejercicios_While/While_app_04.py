@@ -30,6 +30,7 @@ class App(customtkinter.CTk):
         
     
     def btn_validar_numero_on_click(self):
+        numero= "0"
         numero= prompt(title="login", prompt="ingrese un numero")
         while numero < 0 or numero > 9:
             numero= int(numero)

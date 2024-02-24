@@ -5,8 +5,8 @@ from tkinter.simpledialog import askstring as prompt
 import customtkinter
 
 '''
-nombre:
-apellido:
+nombre: Danilo
+apellido: Scapicchi
 ---
 Ejercicio: while_09
 ---
@@ -26,18 +26,15 @@ class App(customtkinter.CTk):
 
         self.title("UTN FRA")
 
-        self.txt_minimo = customtkinter.CTkEntry(
-            master=self, placeholder_text="Mínimo")
+        self.txt_minimo = customtkinter.CTkEntry(master=self, placeholder_text="Mínimo")
         self.txt_minimo.grid(row=0, padx=20, pady=20)
 
-        self.txt_maximo = customtkinter.CTkEntry(
-            master=self, placeholder_text="Máximo")
+        self.txt_maximo = customtkinter.CTkEntry(master=self, placeholder_text="Máximo")
         self.txt_maximo.grid(row=1, padx=20, pady=20)
 
         self.btn_mostrar = customtkinter.CTkButton(
             master=self, text="Comenzar Ingreso", command=self.btn_comenzar_ingreso_on_click)
-        self.btn_mostrar.grid(row=2, padx=20, pady=20,
-                              columnspan=2, sticky="nsew")
+        self.btn_mostrar.grid(row=2, padx=20, pady=20, columnspan=2, sticky="nsew")
 
     def btn_comenzar_ingreso_on_click(self):
         pass
